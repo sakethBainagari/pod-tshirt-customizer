@@ -1,6 +1,81 @@
 # T-Shirt Customizer
 
-A React application for customizing t-shirts with image uploads and text printing options.
+A React application for customizing t-shirts with image uploads, text printing, and size recommendations.
+
+---
+
+## 🚀 Live Demo
+
+**Deployed on Cloudflare Pages:**  
+[https://pod-tshirt-customizer-4qu.pages.dev/](https://pod-tshirt-customizer-4qu.pages.dev/)
+
+**Source Code:**  
+[https://github.com/sakethBainagari/pod-tshirt-customizer](https://github.com/sakethBainagari/pod-tshirt-customizer)
+
+---
+
+## 📝 Usage
+
+1. **Upload an Image:**  
+   Click the "Select File" button or drag and drop an image into the upload area. The image will appear on the t-shirt preview.
+
+2. **Add Text:**  
+   Enter your desired text in the text area (maximum 3 lines, 200 characters). Text is validated in real time.
+
+3. **Set Size Parameters:**  
+   Enter your height (50-250cm), weight (30-200kg), and select your build type (lean, regular, athletic, big). The recommended t-shirt size updates automatically.
+
+4. **Preview the T-Shirt:**  
+   Hover over the t-shirt to see a zoom effect. Click and hold for a more detailed zoom.
+
+5. **Switch Theme:**  
+   Press Alt+Q to cycle through three unique themes (Light, Dark, Vibrant).
+
+---
+
+## 🛠️ Deployment Instructions
+
+1. **Clone the repository:**  
+   ```bash
+   git clone https://github.com/sakethBainagari/pod-tshirt-customizer.git
+   cd pod-tshirt-customizer
+   ```
+
+2. **Install dependencies:**  
+   ```bash
+   npm install
+   ```
+
+3. **Run locally:**  
+   ```bash
+   npm run dev
+   ```
+
+4. **Deploy to Cloudflare Pages:**  
+   - Push your code to GitHub.
+   - Go to [Cloudflare Pages](https://pages.cloudflare.com/), create a new project, and connect your repo.
+   - Set build settings:  
+     - Framework preset: Vite  
+     - Build command: `npm run build`  
+     - Output directory: `dist`
+   - (Optional) Set environment variable: `NODE_VERSION=16.x`
+   - Click "Save and Deploy".
+
+---
+
+## 💡 Approach & AI Usage
+
+This project was built using React (with Vite) and react-hook-form for robust form validation. The UI is inspired by [this CodePen](https://codepen.io/jkantner/full/OPJrMbp) and adapted for a modern, responsive, and accessible experience. Three distinct themes were implemented, with smooth transitions and Alt+Q switching.
+
+**AI was consulted** for:
+- Reviewing code structure and best practices
+- Improving form validation logic
+- Suggesting UI/UX enhancements
+- Drafting documentation and deployment instructions
+
+All code was written and tested by me, with AI used as a coding assistant and reviewer.
+
+---
 
 ## Table of Contents
 
